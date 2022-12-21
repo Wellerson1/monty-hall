@@ -23,4 +23,9 @@ a {
     color: white;
     background: black;
   }
+
+  :root {
+    --area-porta-altura: 200px;
+    --area-porta-largura: 310px;
+  }
 }
