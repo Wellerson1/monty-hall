@@ -1,0 +1,26 @@
+#jogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.portas {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    justify-content: space-around;
+}
+
+.botoes {
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+}
+
+.botao {
+    font-size: 2em;
+    background-color: brown;
+    border: none;
+    padding: 10px 25px;
+}
