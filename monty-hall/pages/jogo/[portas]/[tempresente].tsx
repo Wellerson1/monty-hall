@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import Porta from "../../../components/Porta";
 import styles from "../../../styles/Jogo.module.css"
 import { criarPortas, atualizarPorta } from "../../../functions/portas";
-import Link from "next/link"
+import Link from 'next/link'
 import { useRouter } from "next/router";
 
-export default function jogo() {
+export default function Jogo() {
   const router = useRouter()
     const [ portas, setPortas ] = useState([])
     const [valido, setValido] = useState(false)
@@ -15,7 +15,7 @@ export default function jogo() {
       const comPortaValido = +router.query.tempresente <= +router.query.portas && +router.query.tempresente > 0
 
       setValido(qtdPortasValido && comPortaValido)
-    }, [portas])
+    }, [portas, router.query.portas, router.query.tempresente])
 
     useEffect(() => {
       setPortas(criarPortas(+router.query.portas, +router.query.tempresente))

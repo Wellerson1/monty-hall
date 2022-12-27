@@ -2,7 +2,7 @@
 import React, { useState } from "react"
 import Card from "../components/Card"
 import styles from '../styles/Form.module.css'
-import Link from "next/Link"
+import Link from 'next/link'
 import InputNumber from "../components/InputNumber"
 
 export default function Formulario() {
